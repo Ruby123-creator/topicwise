@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: #0E1111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* ===== Scrollbar Styling (Webkit Browsers) ===== */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; /* For horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Or use #f0f0f0 for light bg */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Change scrollbar color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker on hover */
+}
+
+/* ===== Scrollbar Styling for Firefox ===== */
+* {
+  scrollbar-width: thin;       /* Makes scrollbar thin */
+  scrollbar-color: #888 transparent; /* thumb | track */
+}

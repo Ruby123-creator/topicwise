@@ -1,0 +1,213 @@
+/* Modal Container */
+.modalStyle {
+  background-color: #cfc7c1;   /* light grey */
+  color: #0b0b0b;
+  border-radius: 10px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  padding: 10px;
+  overflow-y: auto;            /* modal content scrolls if too tall */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 999999;
+}
+
+
+.modalStyle h3 {
+  text-align: center;
+  color: #0b0b0b;
+}
+
+
+
+.modalStyle label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+.modalStyle input,
+.modalStyle select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.modalStyle input:focus,
+.modalStyle select:focus {
+  border-color: #02544f;
+  box-shadow: 0 0 5px rgba(2, 84, 79, 0.3);
+}
+
+.modalStyle .passwordField {
+  display: flex;
+  align-items: center;
+}
+
+.modalStyle .eye-icon {
+  margin-left: -40px; /* adjust position over input */
+}
+
+.modalStyle .error {
+  font-size: 12px;
+  color: red;
+}
+
+.modalStyle p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.modalStyle p span {
+  color: #0E1111;
+  cursor: pointer;
+}
+
+.modalStyle p span:hover {
+  text-decoration: underline;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #555;
+}
+
+
+/* Input Label */
+
+/* Submit Button */
+.common-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: #0E1111;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0E1111;
+  margin-top: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.common-btn:hover {
+  background-color: #282c2b;
+}
+
+/* OTP Input Styling */
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.modalStyle .otp-form .otp-boxes .otp-input {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+.otp-input:focus {
+  border-color: #0a0b0b;
+  box-shadow: 0 0 5px rgba(2, 84, 79, 0.3);
+}
+
+.closeIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.closeIcon:hover {
+  color: #02544f;
+}
+
+@media (max-width: 480px) {
+  .modalStyle {
+    width: 80%;
+    padding: 15px;
+  }
+}
+
+
+.radioGroup {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center; /* aligns radio button and text vertically */
+  gap: 5px;            /* space between dot and text */
+  font-size: 14px;
+  color: #333;
+}
+
+.radioGroup input[type="radio"] {
+  margin: 0;
+}
+.passwordField{
+  position: relative;
+}
+.passwordField .eye-icon{
+  position: absolute;
+  right: 0;
+  top: auto;
+}
+
+.error{
+   font-size: 10px;
+   color: rgb(235, 52, 52);
+  
+}
+
