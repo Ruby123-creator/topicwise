@@ -1,4 +1,4 @@
-export const address = "https://e-learning-app-rij1-4bfcwvomw-ruby123creators-projects.vercel.app";
+export const address = "https://e-learning-app-rij1-5r9hzdq12-ruby123creators-projects.vercel.app";
 export const baseUrl = `${address}/api`;
 
 export const API_ENDPOINTS = {
